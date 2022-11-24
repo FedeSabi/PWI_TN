@@ -1,10 +1,7 @@
 {}.container{
     background-color: lightblue;
     position: relative;
-
 }
-
-
 .cubo{
     width: 150px;
     height: 150px;
@@ -53,7 +50,6 @@ img{
 /* fixed */
 /* toma de referencia al body para ibucar al elemento en las coordenadas establecidas */
 .tres{
-
 background-color: yellowgreen;
 position: fixed;
 bottom: 10px;
