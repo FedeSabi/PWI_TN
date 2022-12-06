@@ -2,7 +2,7 @@ section{
     width: 900px;
     border:  2px, solid black;
     display: flex;
-
+  
 }
 .tamaño{
         width: 150px;
@@ -12,8 +12,7 @@ section{
 .caja1{
     background-color: red;
     flex-grow: 1;
-    
-    
+  
 }
 
 .caja2{
