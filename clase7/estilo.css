@@ -36,7 +36,7 @@ section{
 }
 
 body{
-    background: linear-gradient(rgba(53,82, 66, 0.5), rgba(47, 80, 63, 0.6)),  url(imagen1.jpg) center no-repeat;
+    background: linear-gradient(rgba(53,82, 66, 0.5), rgba(47, 80, 63, 0.6)),  url(imagen1.jpg) center no-repeat;/* le das color a la imagen de fondo de la pagina web*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,7 +44,7 @@ body{
     align-items: center;
     height: 100vh;
 }
-h1,p{
+h1,p{ /*al poner , se agrupa las funciones de h1 y p*/
     margin-bottom :15px;
     color: white;
    animation-name: izquierda; /* crea la animacion de izquierda a derecha*/
@@ -68,7 +68,7 @@ button:hover{
     background-color: red; /*cuando pasa el cursor por el boton cambia de color*/
 }
 
-@keyframes izquierda {
+@keyframes izquierda { /*le das animacion de izquierda a derecha*/
     0%{
         transform: translateX(520px);
         opacity: 1;
