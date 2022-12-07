@@ -55,7 +55,7 @@ button{
     width: 180px;
     padding: 12px;
     margin: 20px;
-    border: 2px solid #eee;
+    border: 2px solid #eee; /* al boton se le agrega color y mas grueso el contorno*/
     border-radius: 50px; /*redondea el boton*/
     cursor: pointer; /*aparece la manito cuando pasa el cursor por el boton*/
     font-size: 18px;
@@ -64,14 +64,14 @@ button{
     color: white; 
 }
 
-button:hover{
-    background-color: red; /*cuando pasa el cursor por el boton cambia de color*/
+button:hover{ /*cuando pasas el cursor la funcion HOVER de color*/
+    background-color: red; 
 }
 
 @keyframes izquierda { /*le das animacion de izquierda a derecha*/
     0%{
-        transform: translateX(520px);
-        opacity: 1;
+        transform: translateX(520px);/*le decimos que se traslade sobre el eje X, Y o Z*/
+        opacity: 1; /* es la transpararencia*/
     }
     100%{
         transform: translateX(0);
