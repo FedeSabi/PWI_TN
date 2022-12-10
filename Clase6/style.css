@@ -13,7 +13,7 @@ body{
 .navegacion{
     background-color:lightskyblue;
     padding: 10px;
-    position: sticky;
+    position: sticky; /* sticky es para dejar fijp el nav dentro del header!!!!*/
     top: 0px;
     
 
