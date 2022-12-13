@@ -1,67 +1,72 @@
-*{
-    margin: 0;
+*{margin: 0;
     padding: 0;
+  }
+  
+  header{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  a{text-decoration:  none
+      color: black;
+  }
+  
+  nav > a{margin-left: 15px;
+  }
+  
+  @media(max-width:500px){
+   /*   nav,div{
+          display: none;
+      }
+      .hamburguesa{
+          display: block;
+          color: black;
+   }*/
+   header{
+    flex-direction: column;
 }
-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-nav > a{
-    margin-left: 15px;
-}
-.hamburguesa{
-    color: black;
-    display: none;
-    cursor: pointer;
-    font-size: 32px;
-}
-@media(max-width: 500px){
-    nav,div{
-        visibility: hidden;
-    }
-    .hamburguesa{
-        display:block;
-    }
-}
-.contenedorHero{
+nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    height: 100vh;
-    background: url(imagen2.jpg);
-    background-size: cover;
 }
+
+}
+
+.contenedorHero{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+background: url(./Imagen.jpg);
+}    
 .tituloHero{
-    font-size: 4rem;
-    text-transform: uppercase ;
-    color: white;
-    padding: 1.5rem;
+font-size: 4rem;
+text-transform: uppercase;
+color: white;
+padding: 1.5rem 0;
+text-align: center;
 }
 .textoHero{
-    font-size: 1rem;
+    font-size: 2ren;
     color: white;
     background-color: red;
     max-width: 50%;
-    text-align: center;
+    text-align: center;  
+    padding-bottom: 2rem;
 }
 button{
     padding: 0.9rem 1.6rem;
     border: 1px solid white;
-    color: black;
-    font-size: 4rem;
+    color: black
+    font-size: 1.25rem;
+    background-color: white ;
     text-transform: uppercase;
-    background-color: white;
-    cursor: pointer;
-
+    
 }
 button:hover{
-    background: transparent ;
-    color: transparent;
-    border-color: red;
+    background-color: transparent;
+    color: red;
+    border-color: white;
 }
