@@ -1,14 +1,13 @@
-*{margin: 0;
+* { margin: 0;
     padding: 0;
   }
-  
   header{
       display: flex;
       justify-content: space-around;
       align-items: center;
   }
   
-  a{text-decoration:  none
+  a{text-decoration:  none;
       color: black;
   }
   
@@ -30,16 +29,14 @@ nav {
     display: flex;
     flex-direction: column;
 }
-
 }
-
 .contenedorHero{
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 height: 100vh;
-background: url(./Imagen.jpg);
+background: url(imagen2.jpg);
 }    
 .tituloHero{
 font-size: 4rem;
@@ -59,7 +56,7 @@ text-align: center;
 button{
     padding: 0.9rem 1.6rem;
     border: 1px solid white;
-    color: black
+    color: black;
     font-size: 1.25rem;
     background-color: white ;
     text-transform: uppercase;
@@ -68,5 +65,5 @@ button{
 button:hover{
     background-color: transparent;
     color: red;
-    border-color: white;
+    border-color: white;
 }
