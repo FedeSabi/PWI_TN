@@ -1,0 +1,12 @@
+img{
+    width: 20%;
+}
+.efectoUno:hover{
+filter: blur(3px); /*blur da un efecto difuminado a la imagen */
+}
+.efectoDos:hover{
+filter:invert(100%);
+}
+.efectoTres:hover{
+    filter:saturate(3);
+    }
