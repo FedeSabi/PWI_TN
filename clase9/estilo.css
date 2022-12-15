@@ -1,5 +1,9 @@
+
 * { margin: 0;
     padding: 0;
+  }
+  html{
+    scroll-behavior: smooth; /* envia el scroll mas lento*/
   }
   header{
       display: flex;
@@ -14,8 +18,8 @@
   nav > a{margin-left: 15px;
   }
   
-  @media(max-width:500px){
-   /*   nav,div{
+ /* @media(max-width:500px){
+     nav,div{
           display: none;
       }
       .hamburguesa{
@@ -29,14 +33,13 @@ nav {
     display: flex;
     flex-direction: column;
 }
-}
 .contenedorHero{
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 height: 100vh;
-background: url(imagen2.jpg);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%;url(imagen2.jpg));
 }    
 .tituloHero{
 font-size: 4rem;
@@ -65,5 +68,23 @@ button{
 button:hover{
     background-color: transparent;
     color: red;
-    border-color: white;
+    border-color: white;
+}
+.servicios{
+    background-color: #f0f4f6;
+}
+.btnAbout{
+    background-color: #2eabbb;
+    font-size: 15px;
+    padding: 5px;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    border: 1px solid #2eabbb;
+}
+.textoPrincipal{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px 0;
+    letter-spacing: 0.5rem;
+    font-size: 2.8rem;
 }
