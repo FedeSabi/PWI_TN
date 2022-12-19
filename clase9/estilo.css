@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;/* al colocar el atributo SCROLL-behavior con el valor smooth, todos los anclajes (tipo about) van a ser mas lentos!!*/
+}
 header{
     display: flex;
     justify-content: space-around;
@@ -20,13 +23,22 @@ nav > a{/* con esta funcion le estamos diciendo que todos los a del nav les corr
     font-size: 32px;
 }
 @media(max-width:500px){/*con esta funcion le decimos que cuando lleguen al a 500px los elementos del nav y div desaparezcan con la funcion hidden*/
-nav, div{
+nav{
     display: none;   
  }
  .hamburguesa{
     display:block;
     color: black;
  }
+ .contenedorImgTexto{
+   flex-wrap: wrap;
+ }
+}
+img{
+    width: 30%;
+}
+.contenedorImgTexto{
+    display: flex;
 }
  /*
 }
