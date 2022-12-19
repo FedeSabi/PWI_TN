@@ -1,90 +1,73 @@
-
-* { margin: 0;
+*{
+    margin: 0;
     padding: 0;
-  }
-  html{
-    scroll-behavior: smooth; /* envia el scroll mas lento*/
-  }
-  header{
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-  }
-  
-  a{text-decoration:  none;
-      color: black;
-  }
-  
-  nav > a{margin-left: 15px;
-  }
-  
- /* @media(max-width:500px){
-     nav,div{
-          display: none;
-      }
-      .hamburguesa{
-          display: block;
-          color: black;
-   }*/
-   header{
-    flex-direction: column;
 }
-nav {
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    text-decoration: none;/*daca todos los subrayados*/
+    color: black;
+}
+nav > a{/* con esta funcion le estamos diciendo que todos los a del nav les corra el margen*/ margin-left: 15px;
+}
+.hamburguesa{
+    color: black;
+    display: none;
+    cursor: pointer;
+    font-size: 32px;
+}
+@media(max-width:500px){/*con esta funcion le decimos que cuando lleguen al a 500px los elementos del nav y div desaparezcan con la funcion hidden*/
+nav, div{
+    display: none;   
+ }
+ .hamburguesa{
+    display:block;
+    color: black;
+ }
+}
+ /*
+}
+header{
+    flex-direction: column;/*indico que cuando baje a menos de 500 px se formen en columna
+}
+nav{
     display: flex;
     flex-direction: column;
 }
+*/
 .contenedorHero{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-height: 100vh;
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%;url(imagen2.jpg));
-}    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(imagen3.jpg);
+    background-size: cover; /*centra la imagen de fondo para que quede mejor la imagen en la pantalla*/
+    background-position: center center;/* centra la imagen en x e y*/
+}
 .tituloHero{
-font-size: 4rem;
-text-transform: uppercase;
-color: white;
-padding: 1.5rem 0;
-text-align: center;
+    font-size: 4rem; /* todo lo que sea texto va con la medida REM, 1rem son 16px*/
+    text-transform: uppercase; /*pone el texto en mayusculas*/
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
 }
 .textoHero{
-    font-size: 2ren;
+    font-size: 1rem;
     color: white;
     background-color: red;
     max-width: 50%;
-    text-align: center;  
+    text-align: center;
     padding-bottom: 2rem;
 }
 button{
     padding: 0.9rem 1.6rem;
     border: 1px solid white;
+    text-transform: uppercase;
     color: black;
-    font-size: 1.25rem;
-    background-color: white ;
-    text-transform: uppercase;
-    
-}
-button:hover{
-    background-color: transparent;
-    color: red;
-    border-color: white;
-}
-.servicios{
-    background-color: #f0f4f6;
-}
-.btnAbout{
-    background-color: #2eabbb;
-    font-size: 15px;
-    padding: 5px;
-    letter-spacing: 0.5rem;
-    text-transform: uppercase;
-    border: 1px solid #2eabbb;
-}
-.textoPrincipal{
-    text-align: center;
-    text-transform: uppercase;
-    padding: 50px 0;
-    letter-spacing: 0.5rem;
-    font-size: 2.8rem;
+    background-color: white;
+    cursor: pointer;
 }
