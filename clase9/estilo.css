@@ -22,7 +22,7 @@ nav > a{/* con esta funcion le estamos diciendo que todos los a del nav les corr
     cursor: pointer;
     font-size: 32px;
 }
-@media(max-width:500px){/*con esta funcion le decimos que cuando lleguen al a 500px los elementos del nav y div desaparezcan con la funcion hidden*/
+/*@media(max-width:500px){/*con esta funcion le decimos que cuando lleguen al a 500px los elementos del nav y div desaparezcan con la funcion hidden*/
 nav{
     display: none;   
  }
@@ -31,33 +31,34 @@ nav{
     color: black;
  }
  .contenedorImgTexto{
-   flex-wrap: wrap;
+   display: flex;
+   width: 100%;
+   justify-content: center;
  }
-}
+ .contenedorTextoAbout{
+    width: 40%;
+    margin-left: 3.5rem;
+ }
 img{
     width: 30%;
 }
-.contenedorImgTexto{
-    display: flex;
-}
  /*
-}
 header{
-    flex-direction: column;/*indico que cuando baje a menos de 500 px se formen en columna
-}
+    flex-direction: column;/*indico que cuando baje a menos de 500 px se formen en columna*/
+
 nav{
     display: flex;
     flex-direction: column;
 }
-*/
+
 .contenedorHero{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url(imagen3.jpg);
-    background-size: cover; /*centra la imagen de fondo para que quede mejor la imagen en la pantalla*/
+     background: linear-gradient(59deg, rgba(63,68,98,0.2) 2%, rgba(62,5,16,0.2) 83%),url(imagen3.jpg);
+    background-size: cover; /*centra la imagen de para que quede mejor la imagen en la pantalla*/
     background-position: center center;/* centra la imagen en x e y*/
 }
 .tituloHero{
@@ -82,4 +83,22 @@ button{
     color: black;
     background-color: white;
     cursor: pointer;
+}
+.btnAbout{
+    background-color: #2eabbb;
+    padding: 1rem;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+.textoPrincipal{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px 0;
+    letter-spacing: 0.5rem;
+    font-size: 2.8rem;
+}
+span{
+    color: #2eabbb;
 }
