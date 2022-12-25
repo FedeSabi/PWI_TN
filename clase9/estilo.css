@@ -24,7 +24,8 @@ nav > a{/* con esta funcion le estamos diciendo que todos los a del nav les corr
 }
 /*@media(max-width:500px){/*con esta funcion le decimos que cuando lleguen al a 500px los elementos del nav y div desaparezcan con la funcion hidden*/
 nav{
-    display: none;   
+    display: none; 
+ 
  }
  .hamburguesa{
     display:block;
@@ -48,7 +49,8 @@ header{
 
 nav{
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+   margin: 40px;
 }
 
 .contenedorHero{
